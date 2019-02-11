@@ -15,30 +15,30 @@ This app was created to learn & experiment with React! It also includes notes & 
 
 ### Notable Definitions
 
-*Webpack*
+**Webpack:**
 Bundles JavaScript files.
 
-*Babel*
+**Babel:**
 JavaScript compiler that converts ES6+ (ECMAScript 2015+) code into a backwards compatible version of JavaScript in different browser environments. Also converts JSX into a format that can be run on a browser.
 
-*ESLint*
+**ESLint:**
 Linter for JavaScript syntax.
 
-*Hot Module Reloading (HMR)*
+**Hot Module Reloading (HMR):**
 Whenever a change is made, React will automatically restart in the browser.
 
-*JSX expression*
+**JSX expression:**
 Stands for JavaScript XML. An extension of JavaScript that is used to describe the appearance of the UI.
 
-*React Elements & Virtual DOM*
-React element: a plain JavaScript object that represents a DOM element. Virtual DOM: a representation of the real browser DOM in a React apps memory. Whenever app data changes, a new React element is created in memory. React compares this element to its previous version, and updates elements to match the virtual DOM. This means that we no longer have to work with the DOM (ex: assigning IDs & classes to DOM elements, attaching event handlers, etc.).
-
-*Component*
+**Component:**
 A JavaScript class or function that can take in inputs (ex: props) and return a React element that describes a section of the UI.
 Each component can only return one parent component, so encapsulate code inside of a parent element (ex: div).
 
-*Root Component*
+**Root Component:**
 The component that wraps the entire app, and is on the top of a tree of components.
+
+### React Elements & Virtual DOM
+React element: a plain JavaScript object that represents a DOM element. Virtual DOM: a representation of the real browser DOM in a React apps memory. Whenever app data changes, a new React element is created in memory. React compares this element to its previous version, and updates elements to match the virtual DOM. This means that we no longer have to work with the DOM (ex: assigning IDs & classes to DOM elements, attaching event handlers, etc.).
 
 ### Updating State
 
