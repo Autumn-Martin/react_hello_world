@@ -1,3 +1,65 @@
+# React Hello World
+
+## About
+
+This app was created to learn & experiment with React! It also includes notes & helpful resources.
+
+## Helpful Links & References
+
+- https://programmingwithmosh.com/react/react-tutorial-beginners/
+- https://www.youtube.com/watch?v=Ke90Tje7VS0
+- https://medium.freecodecamp.org/learn-react-js-in-5-minutes-526472d292f4
+- https://hackernoon.com/the-constructor-is-dead-long-live-the-constructor-c10871bea599
+
+## Notes
+
+### Notable Definitions
+
+*Webpack*
+Bundles JavaScript files.
+
+*Babel*
+JavaScript compiler that converts ES6+ (ECMAScript 2015+) code into a backwards compatible version of JavaScript in different browser environments. Also converts JSX into a format that can be run on a browser.
+
+*ESLint*
+Linter for JavaScript syntax.
+
+*Hot Module Reloading (HMR)*
+Whenever a change is made, React will automatically restart in the browser.
+
+*JSX expression*
+Stands for JavaScript XML. An extension of JavaScript that is used to describe the appearance of the UI.
+
+*React Elements & Virtual DOM*
+React element: a plain JavaScript object that represents a DOM element. Virtual DOM: a representation of the real browser DOM in a React apps memory. Whenever app data changes, a new React element is created in memory. React compares this element to its previous version, and updates elements to match the virtual DOM. This means that we no longer have to work with the DOM (ex: assigning IDs & classes to DOM elements, attaching event handlers, etc.).
+
+*Component*
+A JavaScript class or function that can take in inputs (ex: props) and return a React element that describes a section of the UI.
+Each component can only return one parent component, so encapsulate code inside of a parent element (ex: div).
+
+*Root Component*
+The component that wraps the entire app, and is on the top of a tree of components.
+
+### Updating State
+
+- don't update the state directly
+- why? for better performance & for React to tell which part of the DOM it needs to update
+- to update state, call setState method on components
+- the properties in the object passed into setState will overwrite/merge with properties in state
+
+### 2 Types of Data in React: Props & State
+
+#### 1. props
+- external
+- not controlled by the component itself
+- passed down from components higher up in the hierarchy
+- *a component can't change its props directly*
+
+#### 2. state
+- private
+- can be changed from within the component itself
+- *a component can change its internal state directly*
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
